@@ -21,7 +21,8 @@ from eats_worm import *
 #data_directory = "C:/Users/miked/OneDrive - UCSF/Documents/MATLAB/SCAPE/Data/165mm/NeuroPAL/tiff_stacks/20230723_OH16290_1_run1"; numZ = 120; endT = 1715; pixelSize = [0.35, 0.75, 0.25]
 #data_directory = "C:/Users/miked/OneDrive - UCSF/Documents/MATLAB/SCAPE/Data/165mm/NeuroPAL/tiff_stacks/20230723_OH16290_1_run2"; numZ = 120; endT = 1715; pixelSize = [0.35, 0.75, 0.25]
 #data_directory = "C:/Users/miked/OneDrive - UCSF/Documents/MATLAB/SCAPE/Data/165mm/NeuroPAL/tiff_stacks/20230724_OH16290_1_run1"; numZ = 120; endT = 1715; pixelSize = [0.35, 0.75, 0.25]
-data_directory = "C:/Users/miked/OneDrive - UCSF/Documents/MATLAB/SCAPE/Data/165mm/NeuroPAL/tiff_stacks/20230726_OH16290_1_run2"; numZ = 120; endT = 1715; pixelSize = [0.35, 0.75, 0.25]
+#data_directory = "C:/Users/miked/OneDrive - UCSF/Documents/MATLAB/SCAPE/Data/165mm/NeuroPAL/tiff_stacks/20230726_OH16290_1_run2"; numZ = 120; endT = 1715; pixelSize = [0.35, 0.75, 0.25]
+data_directory = "C:/Users/miked/OneDrive - UCSF/Documents/MATLAB/SCAPE/Data/HiCAM_2000/165mm/NeuroPAL/20230915_OH16290_2_run1/Deskewed_-45"; numZ = 200; endT = 2; pixelSize = (0.55, 1, 0.47)
 output_directory = data_directory + "/output/"
 
 
@@ -43,15 +44,9 @@ arguments = {
         "window_size": 5, #3
         "min_distance": 11, #1
         "manage_collisions": "prune",
-<<<<<<< Updated upstream
-        "fb_threshold_margin": 50 #10
-    },
-    "register_frames": False, #True
-=======
         "fb_threshold_margin": 50
     },
     "register_frames": True,
->>>>>>> Stashed changes
     "output_dir": output_directory
 }
 
