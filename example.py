@@ -42,9 +42,9 @@ arguments = {
     "algorithm":"tmip_2d_template",
     "algorithm_params": {
         "window_size": 5, #3
-        "min_distance": 11, #1
+        "min_distance": 10, #1
         "manage_collisions": "prune",
-        "fb_threshold_margin": 50
+        "fb_threshold_margin": 10
     },
     "register_frames": True,
     "output_dir": output_directory
